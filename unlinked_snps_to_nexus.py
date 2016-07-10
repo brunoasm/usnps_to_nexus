@@ -41,6 +41,9 @@ def recode_to_snapp(column):
     if len(all_nucs) > 2:
         warn('Alignment column with >2 alleles removed')
         return None
+    if len(all_nucs) < 2:
+        warn('Monomorphic alignment column removed')
+        return None
 
     column = [''.join(sorted(c)) for c in column_translated]
     states = set(column)
@@ -100,6 +103,7 @@ if __name__ == "__main__":
     #create a nexus object to hold the data
     align_nexus = Nexus()
     align_nexus.datatype = 'integerdata'
+    align_nexus.symbols = '012'
     for seq in seq_list:
         align_nexus.add_sequence(name =seq.id, sequence = seq.seq)
 
