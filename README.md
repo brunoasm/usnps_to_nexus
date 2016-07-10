@@ -25,7 +25,7 @@ In the NEXUS file produced, population will be appended to sample name, separate
 ## Output
 The program outputs a nexus file to the directory in which it is called, with same base name as input file. Sample names will contain populations if a population file is provided.
 
-If any alignment column has more than 2 alleles, a warning is given and this column is ommited from output.
+If any alignment column has more than 2 alleles, a warning is given and this column is ommited from output. The same happens for monomorphic sites.
 
 The most frequent allele in a column is coded as 0, the other allele as 2 and heterozygotes as 1. Ns and -s are converted to ? in the output.
 
