@@ -16,7 +16,7 @@ The program outputs a nexus file to the directory in which it is called, with sa
 
 If any alignment column has more than 2 alleles, a warning is given and this column is ommited from output.
 
-N's and -'s are converted to ? in the output.
+The most frequent allele in a column is coded as 0, the other allele as 2 and heterozygotes as 1. N's and -'s are converted to ? in the output.
 
 
 ## Example
