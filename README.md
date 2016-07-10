@@ -25,4 +25,9 @@ python unlinked_snps_to_nexus.py my_file.unlinked_snps -p pop_table.csv
 ```
 This will produce a file named **my_file.nex** in the current directory, which can be loaded by BEAUTi.
 
+## Required python libraries.
+These libraries need to be installed to use this script:
+* [pandas] (http://pandas.pydata.org)
+* [biopython] (http://biopython.org)
+
 
