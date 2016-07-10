@@ -1,6 +1,7 @@
 # unlinked_snps_to_nexus.py
 A simple script that converts unlinked_snps files produced by [pyRAD](https://github.com/dereneaton/pyrad) to a NEXUS file suitable for SNAPP.
-The input files are simply phylip alignments in which heterozygous individuals are coded by ambiguities, missing data by N and gaps by -.
+
+The input files are simply phylip-formatted alignments in which heterozygous individuals are coded by ambiguities, missing data by N and gaps by -.
 
 ## Usage
 To show help: `python unlinked_snps_to_nexus.py -h`
@@ -11,13 +12,12 @@ To show help: `python unlinked_snps_to_nexus.py -h`
 In the NEXUS file produced, population will be appended to sample name, separated by underline. In BEAUTi, this can be used to quickly set populations by using button **GUESS**.
 
 ## Output
-The program outputs a nexus file to the directory where it is called, named according to the input file.
+The program outputs a nexus file to the directory in which it is called, with same base name as input file.
 If any alignment column has more than 2 alleles, a warning is given and this column is ommited from output.
 N's and -'s are converted to ? in the output.
 
 
 ## Example
-
 ```bash
 python unlinked_snps_to_nexus.py my_file.unlinked_snps -p pop_table.csv
 ```
