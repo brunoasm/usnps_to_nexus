@@ -3,6 +3,7 @@ A simple script that converts unlinked_snps files produced by [pyRAD](https://gi
 
 The input file is simply a phylip-formatted alignment in which heterozygous individuals are coded by ambiguities, missing data by N and gaps by -.
 
+
 ## Usage
 To show help: 
 ```bash
@@ -33,5 +34,5 @@ The most frequent allele in a column is coded as 0, the other allele as 2 and he
 These libraries need to be installed to use this script:
 * [Pandas] (http://pandas.pydata.org)
 * [Biopython] (http://biopython.org)
-
+The script was tested using Python 2.7.11. It seems there might be some incompatibilities with Python 3.
 
