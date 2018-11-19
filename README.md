@@ -3,6 +3,8 @@ A simple script that converts unlinked_snps files produced by [pyRAD](https://gi
 
 The input file is simply a phylip-formatted alignment in which heterozygous individuals are coded by ambiguities, missing data by N and gaps by -.
 
+The most recent version of this script can be found at: https://github.com/brunoasm/ipyrad_tools/blob/master/output_converters/alleles_to_multiple_nexus.py
+
 
 ## Usage
 To show help: 
